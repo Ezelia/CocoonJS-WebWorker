@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script src = "js/CocoonJSExtensions/CocoonJS.js"></script>
+		<script src = "js/CocoonJSExtensions/CocoonJS_App.js"></script>
+		<script src = "js/CocoonJSExtensions/CocoonJS_App_ForCocoonJS.js"></script>	
+		<script src="js/ezelia.com/Worker_ForCocoonJS.js"></script>
+		<script>
+			CocoonJS.App.onLoadInTheWebViewSucceed.addEventListener(function (pageURL) {
+			});
+
+			CocoonJS.App.onLoadInTheWebViewFailed.addEventListener(function (pageURL) {
+				console.error("ERROR!!");
+			});
+			CocoonJS.App.loadInTheWebView("worker.html");
+		</script>
+	</head>
+	<body>
+
+		
+
+		
+		<script src = "js/script.js"></script>
+	</body>
+</html>
